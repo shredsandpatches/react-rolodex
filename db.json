@@ -1,0 +1,37 @@
+{
+	"games": [
+		{
+			"developer": "NCS Corp",
+			"format": "Super Nintendo Entertainment System",
+			"id": "T4988616008039",
+			"publisher": "Masaya",
+			"region": "NTSC-J",
+			"title": "Assault Suits Valken"
+		},
+		{
+			"developer": "SEGA",
+			"format": "SEGA Mega Drive",
+			"id": "4974365541262",
+			"publisher": "SEGA",
+			"region": "NTSC-J",
+			"title": "Ristar"
+		},
+		{
+			"developer": "Namco",
+			"format": "Sony PlayStation",
+			"id": "722674020732",
+			"publisher": "Namco",
+			"region": "NTSC-U/C",
+			"title": "Klonoa"
+		},
+		{
+			"developer": "Quintet",
+			"format": "Super Nintendo Entertainment System",
+			"id": "045496330484",
+			"notes": "Includes map; English language instructions only.",
+			"publisher": "Nintendo",
+			"region": "PAL",
+			"title": "Terranigma"
+		}
+	]
+}
