@@ -24,7 +24,7 @@ class App extends Component {
 	constructor() {
 		super();
 		// Initialise state.
-		this.state = { games: [] };
+		this.state = { games: [], searchValue: '' };
 	}
 
 	componentDidMount() {
@@ -32,9 +32,21 @@ class App extends Component {
 	}
 
 	render() {
+		const filteredGames = this.state.games.filter((game) =>
+			game.title.toLowerCase().includes(this.state.searchValue.toLowerCase())
+		);
+
 		return (
 			<div className="App" data-testid="main-app">
-				{listGames(this.state.games)}
+				<input
+					className="search-box"
+					type="search"
+					placeholder="Search games..."
+					onChange={(event) =>
+						this.setState({ searchValue: event.target.value.trim() })
+					}
+				/>
+				{listGames(filteredGames)}
 			</div>
 		);
 	}
