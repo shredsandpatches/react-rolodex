@@ -1,15 +1,11 @@
 import './App.css';
 import { Component } from 'react';
+import { CardList } from './components/CardList/CardList.component';
+import { SearchBox } from './components/SearchBox/SearchBox.component';
 
 const API_URL =
 	'https://my-json-server.typicode.com/shredsandpatches/react-rolodex';
 const GAMES_ENDPOINT_URL = `${API_URL}/games`;
-
-const sortGamesByTitle = (a, b) =>
-	a.title < b.title ? -1 : a.title > b.title ? 1 : 0;
-
-const listGames = (collection = [], sortFn = sortGamesByTitle) =>
-	collection.sort(sortFn).map(({ id, title }) => <h1 key={id}>{title}</h1>);
 
 const fetchGames = async () => {
 	try {
@@ -27,26 +23,23 @@ class App extends Component {
 		this.state = { games: [], searchValue: '' };
 	}
 
-	componentDidMount() {
+	componentDidMount = () =>
 		fetchGames().then((games) => this.setState({ games }));
-	}
+
+	inputOnChange = (event) =>
+		this.setState({ searchValue: event.target.value.trim() });
 
 	render() {
-		const filteredGames = this.state.games.filter((game) =>
-			game.title.toLowerCase().includes(this.state.searchValue.toLowerCase())
+		const { state, inputOnChange } = this;
+
+		const filteredGames = state.games.filter((game) =>
+			game.title.toLowerCase().includes(state.searchValue.toLowerCase())
 		);
 
 		return (
 			<div className="App" data-testid="main-app">
-				<input
-					className="search-box"
-					type="search"
-					placeholder="Search games..."
-					onChange={(event) =>
-						this.setState({ searchValue: event.target.value.trim() })
-					}
-				/>
-				{listGames(filteredGames)}
+				<SearchBox onChange={inputOnChange} />
+				<CardList collection={filteredGames} />
 			</div>
 		);
 	}
