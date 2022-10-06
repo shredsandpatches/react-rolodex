@@ -1,12 +1,14 @@
+import './SearchBox.styles.css';
+
 export const SearchBox = ({
-	className = 'search-box',
+	className = '',
 	placeholder = 'Search games...',
-	onChange,
+	onChangeHandler,
 }) => (
 	<input
-		className={className}
+		className={`search-box ${className}`}
 		type="search"
 		placeholder={placeholder}
-		onChange={onChange}
+		onChange={onChangeHandler}
 	/>
 );
