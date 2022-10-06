@@ -1,0 +1,41 @@
+.card-container {
+    display: flex;
+    background-color: #848787;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 5px;
+    padding: 25px;
+    margin: 10px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    width: 40%;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.01);
+    border-color: rgb(196, 194, 194);
+  }
+  
+  .screenshot {
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .text-title {
+    margin: 0;
+  }
+
+  .text-details {
+    font-size: 10px;
+    font-style: italic;
+    text-align: right;
+  }
+
+  .text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
