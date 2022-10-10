@@ -8,8 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(
     to right,
-    rgb(179, 181, 187) 0%,
-    rgb(94, 98, 98) 100%
+    #b3b5bb 0%,
+    #5e6262 100%
   );
   text-align: center;
 }
@@ -18,8 +18,8 @@ body {
   background-color: #4a4a4a;
   background-image: linear-gradient(
     to right,
-    rgb(24, 24, 24) 0%,
-    rgb(83, 83, 83) 100%
+    #181818 0%,
+    #535353 100%
   );
   background-size: 100%;
   background-clip: text;
