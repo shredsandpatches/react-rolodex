@@ -38,6 +38,7 @@ class App extends Component {
 
 		return (
 			<div className="App" data-testid="main-app">
+				<h1 className="app-title">Games Collection</h1>
 				<SearchBox onChangeHandler={inputOnChange} />
 				<CardList collection={filteredGames} />
 			</div>
