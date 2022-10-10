@@ -1,6 +1,7 @@
 import './App.css';
 import { Component } from 'react';
 import { CardList } from './components/CardList/CardList.component';
+import { ResultsCounter } from './components/ResultsCounter/ResultsCounter.component';
 import { SearchBox } from './components/SearchBox/SearchBox.component';
 
 const API_URL =
@@ -40,6 +41,7 @@ class App extends Component {
 			<div className="App" data-testid="main-app">
 				<h1 className="app-title">Games Collection</h1>
 				<SearchBox onChangeHandler={inputOnChange} />
+				<ResultsCounter count={filteredGames.length} />
 				<CardList collection={filteredGames} />
 			</div>
 		);
