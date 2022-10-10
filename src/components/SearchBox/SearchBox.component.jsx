@@ -2,7 +2,7 @@ import './SearchBox.styles.css';
 
 export const SearchBox = ({
 	className = '',
-	placeholder = 'Search games...',
+	placeholder = 'Search by title..',
 	onChangeHandler,
 }) => (
 	<input
