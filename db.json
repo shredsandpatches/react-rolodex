@@ -7,7 +7,8 @@
 			"publisher": "Masaya",
 			"region": "NTSC-J",
 			"screenshotUrl": "https://i.imgur.com/R2St0m2.png",
-			"title": "Assault Suits Valken"
+			"title": "Assault Suits Valken",
+			"yearPublished": "1992"
 		},
 		{
 			"developer": "SEGA",
@@ -16,7 +17,8 @@
 			"publisher": "SEGA",
 			"region": "NTSC-J",
 			"screenshotUrl": "https://i.imgur.com/89aVIEI.png",
-			"title": "Ristar"
+			"title": "Ristar",
+			"yearPublished": "1995"
 		},
 		{
 			"developer": "Namco",
@@ -25,7 +27,8 @@
 			"publisher": "Namco",
 			"region": "NTSC-U/C",
 			"screenshotUrl": "https://i.imgur.com/q3MbLPR.png",
-			"title": "Klonoa"
+			"title": "Klonoa",
+			"yearPublished": "1998"
 		},
 		{
 			"developer": "Quintet",
@@ -35,7 +38,58 @@
 			"publisher": "Nintendo",
 			"region": "PAL",
 			"screenshotUrl": "https://i.imgur.com/jdRtBj3.png",
-			"title": "Terranigma"
+			"title": "Terranigma",
+			"yearPublished": "1996"
+		},
+		{
+			"developer": "Treasure",
+			"format": "SEGA Mega Drive",
+			"id": "4974365541033",
+			"publisher": "SEGA",
+			"region": "NTSC-J",
+			"screenshotUrl": "https://i.imgur.com/79CUhxX.png",
+			"title": "Gunstar Heroes",
+			"yearPublished": "1993"
+		},
+		{
+			"developer": "Konami",
+			"format": "Sony PlayStation",
+			"id": "083717170372",
+			"publisher": "Konami",
+			"region": "NTSC-U/C",
+			"screenshotUrl": "https://i.imgur.com/qyhRL1I.jpg",
+			"title": "Silent Hill",
+			"yearPublished": "1999"
+		},
+		{
+			"developer": "Software Creations",
+			"format": "Super Nintendo Entertainment System",
+			"id": "090451304031",
+			"publisher": "Sony Imagesoft",
+			"region": "NTSC-U/C",
+			"screenshotUrl": "https://i.imgur.com/n7PJ1L3.png",
+			"title": "Equinox",
+			"yearPublished": "1993"
+		},
+		{
+			"developer": "Saffire",
+			"format": "Nintendo Game Boy",
+			"id": "045496730642",
+			"publisher": "Nintendo",
+			"region": "PAL",
+			"screenshotUrl": "https://i.imgur.com/Lx9cOYb.png",
+			"title": "James Bond 007",
+			"yearPublished": "1998"
+		},
+		{
+			"developer": "Sacnoth",
+			"format": "SNK Neo Geo Pocket Color",
+			"id": "5055000800377",
+			"publisher": "SNK",
+			"region": "PAL",
+			"screenshotUrl": "https://i.imgur.com/YCgqQPN.png",
+			"title": "Faselei!",
+			"yearPublished": "2000"
 		}
 	]
 }
