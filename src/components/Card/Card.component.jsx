@@ -8,6 +8,7 @@ export const Card = ({
 	format,
 	publisher,
 	region,
+	yearPublished,
 }) => (
 	<div key={id} className="card-container">
 		<figure className="screenshot-container">
@@ -16,7 +17,7 @@ export const Card = ({
 				src={screenshotUrl}
 				alt={`Screenshot of ${title}`}
 			/>
-			<figcaption className="screenshot-caption">{id}</figcaption>
+			<figcaption className="screenshot-caption">{yearPublished}</figcaption>
 		</figure>
 		<div className="text-wrapper">
 			<h4 className="text-title">{title}</h4>
